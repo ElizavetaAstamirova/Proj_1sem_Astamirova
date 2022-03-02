@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32d32520-dff9-41a9-8967-340bfac3ec5a" name="Default Changelist" comment="small commit">
-      <change afterPath="$PROJECT_DIR$/PZ_12/PZ_12_1.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/PZ_13/PZ_13_1.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/PZ_13/PZ_13_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -46,7 +45,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.PZ_12_1">
+  <component name="RunManager" selected="Python.PZ_13_1">
     <configuration name="Зс" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Proj_1sem_Astamirova" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,10 +155,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PZ_13_1" />
+        <item itemvalue="Python.PZ_13_2" />
         <item itemvalue="Python.PZ_12_1" />
         <item itemvalue="Python.Зс" />
-        <item itemvalue="Python.PZ_13_2" />
-        <item itemvalue="Python.PZ_13_1" />
         <item itemvalue="Python.PZ_12_2" />
       </list>
     </recent_temporary>
@@ -215,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646112741118</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="small commit">
+      <created>1646153375402</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646153375403</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
