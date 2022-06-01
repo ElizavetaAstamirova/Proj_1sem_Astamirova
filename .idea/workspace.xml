@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32d32520-dff9-41a9-8967-340bfac3ec5a" name="Default Changelist" comment="module">
-      <change afterPath="$PROJECT_DIR$/PZ_16/__init__.py" afterDir="false" />
+    <list default="true" id="32d32520-dff9-41a9-8967-340bfac3ec5a" name="Default Changelist" comment="промежуточный">
       <change afterPath="$PROJECT_DIR$/PZ_NATA/PZ_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BD/bd/saper.db" beforeDir="false" afterPath="$PROJECT_DIR$/BD/bd/saper.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BD/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/BD/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PZ16/bd.py" beforeDir="false" afterPath="$PROJECT_DIR$/PZ16/bd.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653548982779</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="промежуточный">
+      <created>1654113129350</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1654113129350</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,7 +301,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="small commit" />
     <MESSAGE value="module" />
-    <option name="LAST_COMMIT_MESSAGE" value="module" />
+    <MESSAGE value="промежуточный" />
+    <option name="LAST_COMMIT_MESSAGE" value="промежуточный" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
