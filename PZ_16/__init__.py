@@ -19,7 +19,7 @@ class Main(tk.Frame):
         toolbar.pack(side=tk.TOP, fill=tk.X)
 
         self.add_img = tk.PhotoImage(file="../PZ_16/11.gif")
-        self.btn_open_dialog = tk.Button(toolbar, text='Добавить товар', command=self.open_dialog, bg='#57A0D2', bd=0,
+        self.btn_open_dialog = tk.Button(toolbar, text='Добавить', command=self.open_dialog, bg='#57A0D2', bd=0,
                                     compound=tk.TOP, image=self.add_img)
         self.btn_open_dialog.pack(side=tk.LEFT)
 
@@ -29,12 +29,12 @@ class Main(tk.Frame):
         btn_edit_dialog.pack(side=tk.LEFT)
 
         self.delete_img = tk.PhotoImage(file="../PZ_16/13.gif")
-        btn_delete = tk.Button(toolbar, text="Удалить товар", command=self.delete_records, bg='#57A0D2',
+        btn_delete = tk.Button(toolbar, text="Удалить", command=self.delete_records, bg='#57A0D2',
                                     bd=0, compound=tk.TOP, image=self.delete_img)
         btn_delete.pack(side=tk.LEFT)
 
         self.search_img = tk.PhotoImage(file="../PZ_16/14.gif")
-        btn_search = tk.Button(toolbar, text="Поиск товара", command=self.open_search_dialog, bg='#57A0D2',
+        btn_search = tk.Button(toolbar, text="Поиск абитуриента", command=self.open_search_dialog, bg='#57A0D2',
                                bd=0, compound=tk.TOP, image=self.search_img)
         btn_search.pack(side=tk.LEFT)
 
@@ -52,15 +52,16 @@ class Main(tk.Frame):
         self.tree.column('c_t', width=200, anchor=tk.CENTER)
         self.tree.column('s_i', width=140, anchor=tk.CENTER)
         self.tree.column('o_c', width=140, anchor=tk.CENTER)
+        self.tree.column('s_c', width=140, anchor=tk.CENTER)
 
-        self.tree.heading('t_id', text='Код товара')
-        self.tree.heading('name_t', text='Наименование товара')
-        self.tree.heading('name_m', text='Наименование магазина')
-        self.tree.heading('report', text='Заявки магазина')
-        self.tree.heading('c_t', text='Количество товара на складе')
-        self.tree.heading('s_i', text='Единицы измерения')
-        self.tree.heading('o_c', text='Оптовая цена')
-
+        self.tree.heading('t_id', text='Регистрационный номер')
+        self.tree.heading('name_t', text='Фамилия')
+        self.tree.heading('name_m', text='Имя')
+        self.tree.heading('report', text='Отчество')
+        self.tree.heading('c_t', text='Дата рождения')
+        self.tree.heading('s_i', text='Награды')
+        self.tree.heading('o_c', text='Адрес')
+        self.tree.heading('s_c', text='Специальность')
         self.tree.pack()
 
     def records(self, t_id, name_t, name_m, report, c_t, s_i, o_c):
@@ -110,41 +111,41 @@ class Child(tk.Toplevel):
         self.view = app
 
     def init_child(self):
-        self.title('Добавить товар')
+        self.title('Регистрационный номер')
         self.geometry('600x270+600+300')
         self.resizable(False, False)
 
-        label_description = tk.Label(self, text='Код товара')
+        label_description = tk.Label(self, text='Фамилия')
         label_description.place(x=50, y=25)
         self.entry_des = ttk.Entry(self)
         self.entry_des.place(x=220, y=25)
 
-        label_name = tk.Label(self, text='Наименование товара')
+        label_name = tk.Label(self, text='Имя')
         label_name.place(x=50, y=50)
         self.entry_name = ttk.Entry(self)
         self.entry_name.place(x=220, y=50)
 
-        label_name1 = tk.Label(self, text='Наименование магазина')
+        label_name1 = tk.Label(self, text='Отчество')
         label_name1.place(x=50, y=75)
         self.entry1_name = ttk.Entry(self)
         self.entry1_name.place(x=220, y=75)
 
-        label_old = tk.Label(self, text='Заявки магазина')
+        label_old = tk.Label(self, text='Дата рождения')
         label_old.place(x=50, y=100)
         self.entry_z = ttk.Entry(self)
         self.entry_z.place(x=220, y=100)
 
-        label_score = tk.Label(self, text='Количество товара на складе')
+        label_score = tk.Label(self, text='Награды')
         label_score.place(x=50, y=125)
         self.entry_c = ttk.Entry(self)
         self.entry_c.place(x=220, y=125)
 
-        label_score = tk.Label(self, text='Единицы измерения')
+        label_score = tk.Label(self, text='Адрес')
         label_score.place(x=50, y=150)
         self.entry_s_i = ttk.Entry(self)
         self.entry_s_i.place(x=220, y=150)
 
-        label_score = tk.Label(self, text='Оптовая цена')
+        label_score = tk.Label(self, text='Специальность')
         label_score.place(x=50, y=175)
         self.entry_o = ttk.Entry(self)
         self.entry_o.place(x=220, y=175)
@@ -195,7 +196,7 @@ class Search(tk.Toplevel):
         self.geometry("400x100+400+300")
         self.resizable(False, False)
 
-        label_search = tk.Label(self, text="Поиск по названию")
+        label_search = tk.Label(self, text="Поиск по фамилии")
         label_search.place(x=50, y=20)
 
         self.entry_search = ttk.Entry(self)
@@ -234,7 +235,7 @@ if __name__ == "__main__":
     db = DB()
     app = Main(root)
     app.pack()
-    root.title("Оптовая база")
+    root.title("Абитуриент")
     root.geometry("1050x450+300+200")
     root.resizable(False, False)
     root.mainloop()
